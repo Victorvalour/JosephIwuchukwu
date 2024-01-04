@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import GreenBg from '../images/GreenBg.jpg'
 import Hero1 from '../images/Hero1.jpg'
 import JoeFlyer from '../images/JoeFlyer.jpg'
+import HappyImg from '../images/happy.jpg'
 import { motion, useAnimate, stagger, } from "framer-motion"
 import Navbar from '../components/Navbar'
 import SignUp from '../components/SignUp'
@@ -64,7 +65,7 @@ const Homepage = () => {
 
         <div className='px-4 '> 
         <p className='text-center font-spaceGrotesk text-4xl'>What do you hope to achieve in 2024?</p>
-      <motion.div className='mt-4 bg-slate-200 px-10'
+      <motion.div className='mt-4 bg-slate-200 px-10 py-4 mb-10'
         initial={{
           opacity: 0,
           y: 50
@@ -88,13 +89,82 @@ const Homepage = () => {
           }}
         viewport={{ once: false }}
         
-        className='text-2xl list-disc'>
+        className='text-2xl font-medium list-disc'>
           <motion.li>More Impact!</motion.li>
           <motion.li>More Influence!</motion.li>
           <motion.li>More Visibility!</motion.li>
           <motion.li>More Alignment to Your Purpose!</motion.li>
           <li>More Money!</li>
         </motion.ul>
+      </motion.div>
+
+      <motion.div className=' flex flex-col mt-4 bg-slate-200 px-5 py-4'
+        initial={{
+          opacity: 0,
+          y: 50
+        }}
+       whileInView={{ opacity: 1,
+        y: 0, // Slide in to its original position
+        transition: {
+          duration: 1 }
+        }}
+      viewport={{ once: false }}
+      >
+<div className='flex mb-4'>
+        <motion.p 
+        initial={{
+          opacity: 0,
+          y: 50
+        }}
+        whileInView={{ opacity: 1,
+          y: 0, // Slide in to its original position
+          transition: {
+            duration: 1 }
+          }}
+        viewport={{ once: false }}
+        
+        className='text-2xl list-disc mb-5'>
+          Whichever it is, you are not the first to have such dreams in your lifetime.
+          
+        </motion.p>
+
+        <img src={HappyImg} alt="" className='w-[40%] rounded-xl h-[100%] rotate-12' />
+
+        </div>
+
+        <motion.p 
+        initial={{
+          opacity: 0,
+          y: 50
+        }}
+        whileInView={{ opacity: 1,
+          y: 0, // Slide in to its original position
+          transition: {
+            duration: 1 }
+          }}
+        viewport={{ once: false }}
+        
+        className='text-2xl list-disc'>
+          There've been so many who had similar dreams. But these dreams remained with the dreamer and died there, unfortunately.
+
+          </motion.p>
+
+          <motion.p 
+        initial={{
+          opacity: 0,
+          y: 50
+        }}
+        whileInView={{ opacity: 1,
+          y: 0, // Slide in to its original position
+          transition: {
+            duration: 1 }
+          }}
+        viewport={{ once: false }}
+        
+        className='text-2xl list-disc mt-4'>
+          Just like them, you are losing touch with your uniqueness because of the crippling effects of any/all of the following:
+
+        </motion.p>
       </motion.div>
         </div>
     </div>
