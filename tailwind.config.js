@@ -7,6 +7,7 @@ export default {
         gothic: ["Dela Gothic One"],
         spaceGrotesk: ["Space Grotesk"],
         ibmPlexMono: ["IBM Plex Mono"],
+        spaceMono: ["Space Mono"],
       },
     },
   },

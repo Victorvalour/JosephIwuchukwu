@@ -65,7 +65,8 @@ const Homepage = () => {
 
         <div className='px-4 '> 
         <p className='text-center font-spaceGrotesk text-4xl'>What do you hope to achieve in 2024?</p>
-      <motion.div className='mt-4 bg-slate-200 px-10 py-4 mb-10'
+
+      <motion.div className='mt-4 bg-slate-100 px-10 py-4 mb-12 rounded-lg border-[#25A80F] border-2 border-opacity-50'
         initial={{
           opacity: 0,
           y: 50
@@ -98,7 +99,7 @@ const Homepage = () => {
         </motion.ul>
       </motion.div>
 
-      <motion.div className=' flex flex-col mt-4 bg-slate-200 px-5 py-4'
+      <motion.div className=' flex flex-col mt-4 bg-slate-100 px-5 py-4 rounded-lg font-spaceMono border-[#25A80F] border-2 border-opacity-50'
         initial={{
           opacity: 0,
           y: 50
@@ -123,7 +124,7 @@ const Homepage = () => {
           }}
         viewport={{ once: false }}
         
-        className='text-2xl list-disc mb-5'>
+        className='text-xl list-disc mb-5 leading-6 mr-2'>
           Whichever it is, you are not the first to have such dreams in your lifetime.
           
         </motion.p>
@@ -144,7 +145,7 @@ const Homepage = () => {
           }}
         viewport={{ once: false }}
         
-        className='text-2xl list-disc'>
+        className='text-xl list-disc leading-6'>
           There've been so many who had similar dreams. But these dreams remained with the dreamer and died there, unfortunately.
 
           </motion.p>
@@ -161,7 +162,7 @@ const Homepage = () => {
           }}
         viewport={{ once: false }}
         
-        className='text-2xl list-disc mt-4'>
+        className='text-xl list-disc mt-4 leading-6'>
           Just like them, you are losing touch with your uniqueness because of the crippling effects of any/all of the following:
 
         </motion.p>
