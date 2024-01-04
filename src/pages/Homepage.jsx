@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import GreenBg from '../images/Green Bg.jpg'
+import GreenBg from '../images/GreenBg.jpg'
 import Hero1 from '../images/Hero1.jpg'
 import JoeFlyer from '../images/JoeFlyer.jpg'
 import { motion, useAnimate, stagger, } from "framer-motion"
