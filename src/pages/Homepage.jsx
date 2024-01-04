@@ -66,7 +66,7 @@ const Homepage = () => {
         <div className='px-4 '> 
         <p className='text-center font-spaceGrotesk text-4xl'>What do you hope to achieve in 2024?</p>
 
-      <motion.div className='mt-4 bg-slate-100 px-10 py-4 mb-12 rounded-lg border-[#25A80F] border-2 border-opacity-50'
+      <motion.div className='mt-4 bg-slate-100 px-10 py-4 mb-12 rounded-lg border-[#25A80F] border-2 border-opacity-30'
         initial={{
           opacity: 0,
           y: 50
@@ -99,7 +99,7 @@ const Homepage = () => {
         </motion.ul>
       </motion.div>
 
-      <motion.div className=' flex flex-col mt-4 bg-slate-100 px-5 py-4 rounded-lg font-spaceMono border-[#25A80F] border-2 border-opacity-50'
+      <motion.div className=' flex flex-col mt-4 bg-slate-100 px-5 py-4 rounded-lg font-spaceMono shadow-[0px_0px_5px_0px_rgba(13,184,40,0.75)]'
         initial={{
           opacity: 0,
           y: 50
