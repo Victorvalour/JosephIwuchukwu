@@ -4,6 +4,10 @@ import GreenBg from '../images/GreenBg.jpg'
 import Hero1 from '../images/Hero1.jpg'
 import JoeFlyer from '../images/JoeFlyer.jpg'
 import HappyImg from '../images/happy.jpg'
+import Fear from '../images/FearImg.png'
+import ImposterImg from '../images/ImposterImg.png'
+import SelfDoubtImg from '../images/SelfDoubtImg.png'
+import ToxicImg from '../images/ToxicImg.webp'
 import { motion, useAnimate, stagger, } from "framer-motion"
 import Navbar from '../components/Navbar'
 import SignUp from '../components/SignUp'
@@ -66,7 +70,7 @@ const Homepage = () => {
         <div className='px-4 '> 
         <p className='text-center font-spaceGrotesk text-4xl'>What do you hope to achieve in 2024?</p>
 
-      <motion.div className='mt-4 bg-green-100 px-10 py-4 mb-12 rounded-lg border-[#25A80F] border-2 border-opacity-30'
+      <motion.div className='mt-4 bg-[#bde9b6] px-10 py-4 mb-12 rounded-lg border-[#25A80F] border-2 border-opacity-30'
         initial={{
           opacity: 0,
           y: 50
@@ -99,7 +103,7 @@ const Homepage = () => {
         </motion.ul>
       </motion.div>
 
-      <motion.div className=' flex flex-col mt-4 bg-green-100 px-5 py-4 rounded-lg font-spaceMono shadow-[0px_0px_5px_0px_rgba(13,184,40,0.75)]'
+      <motion.div className=' flex flex-col mt-4 bg-[#135507] text-white px-5 py-4 rounded-lg font-spaceMono shadow-[0px_0px_5px_0px_rgba(13,184,40,0.75)]'
         initial={{
           opacity: 0,
           y: 50
@@ -162,11 +166,22 @@ const Homepage = () => {
           }}
         viewport={{ once: false }}
         
-        className='text-xl list-disc mt-4 leading-6'>
+        className='text-xl list-disc mt-4 leading-6' mb->
           Just like them, you are losing touch with your uniqueness because of the crippling effects of any/all of the following:
 
         </motion.p>
       </motion.div>
+
+            <div className='flex flex-col items-center'>
+              <div> <img src={Fear} alt="" className='w-32'/>
+                  <p>Fear</p>
+              </div>
+              <div> <img src={ToxicImg} alt="" className='w-32'/></div>
+              <div> <img src={SelfDoubtImg} alt="" className='w-32'/></div>
+              <div> <img src={ImposterImg} alt="" 
+              className='w-32'/></div>
+            </div>
+
         </div>
     </div>
   )
